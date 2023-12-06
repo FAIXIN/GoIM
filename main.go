@@ -5,7 +5,6 @@ import "github.com/gin-gonic/gin"
 func main() {
 	router := gin.Default()
 	router.GET("/ws", createWs)
-	// router.RunTLS(":8888", "/home/faixin/IMdemo/chat.faixin.cn/fullchain.pem", "/home/faixin/IMdemo/chat.faixin.cn/privkey.pem")
 	router.Run(":8888")
 }
 
